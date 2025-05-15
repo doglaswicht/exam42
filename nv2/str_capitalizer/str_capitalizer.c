@@ -19,7 +19,7 @@ void str_capitalizer(char *str)
                 str[i] -= 32;
             new_word = 0;
         }
-        else if(str[i] == ' ' || str[i] == '\t')
+        else if(str[i] == ' ' && str[i] == '\t')
             new_word = 1;
         else
             new_word = 0;
